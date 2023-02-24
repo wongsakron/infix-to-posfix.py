@@ -5,13 +5,12 @@ posfix = []
 stack = []
 data = "(Q+A/j)*B/(C/D+F)*G^D" #datatest
 # data = str(input("Enter Infix"))
-round = True
 
 
 for i in data:
     if i in ope:
         stack.append(i)
-        while round == True:
+        while True:
             if i == ")":
                 del stack[-1]
                 for pushdata in range(1,len(stack)+1):
