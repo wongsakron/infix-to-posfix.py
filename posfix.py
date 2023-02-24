@@ -42,7 +42,7 @@ for i in data:
                 break
     else:
         posfix.append(i)
-    round = True
+        
 for i in range(1,len(stack)+1):
     posfix.append(copy.deepcopy(stack[-abs(i)]))
 del stack
